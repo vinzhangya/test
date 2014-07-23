@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>meimei</artifactId>
+        <groupId>com.mitchz.apps</groupId>
+        <version>$(meimei.version)</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>meimei-redis</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mitchz.apps</groupId>
+            <artifactId>meimei-common</artifactId>
+            <version>$(meimei.version)</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mitchz.apps</groupId>
+            <artifactId>meimei-parser</artifactId>
+            <version>$(meimei.version)</version>
+        </dependency>
+    </dependencies>
+</project>
